@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.pratyush.elcafecartel.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.pratyush.elcafecartel.ui.ProjectFragment"
+        android:label="The Project"
+        tools:layout="@layout/fragment_project" />
+    <fragment
+        android:id="@+id/loreFragment"
+        android:name="com.pratyush.elcafecartel.ui.LoreFragment"
+        android:label="The Lore"
+        tools:layout="@layout/fragment_lore" >
+        <action
+            android:id="@+id/action_loreFragment_to_storyLoreFragment"
+            app:destination="@id/storyLoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyLoreFragment"
+        android:name="com.pratyush.elcafecartel.ui.StoryLoreFragment"
+        android:label="Story"
+        tools:layout="@layout/fragment_story_lore" >
+        <argument
+            android:name="storyNumber"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/sneakPeaksFragment"
+        android:name="com.pratyush.elcafecartel.ui.SneakPeaksFragment"
+        android:label="Sneak Peaks"
+        tools:layout="@layout/fragment_sneak_peaks" />
+    <fragment
+        android:id="@+id/officialLinksFragment"
+        android:name="com.pratyush.elcafecartel.ui.OfficialLinksFragment"
+        android:label="Official Links"
+        tools:layout="@layout/fragment_official_links" />
+
+</navigation>

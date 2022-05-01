@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    android:orientation="vertical"
+    tools:context=".ui.ProjectFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="center"
+        android:src="@drawable/el_profile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/dark_brown">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/fredericka_the_great"
+                android:layout_marginTop="5dp"
+                android:text="@string/project_1"
+                android:textColor="#762e2f"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredericka_the_great"
+                android:text="Art 💀"
+                android:layout_marginTop="5dp"
+                android:textColor="#762e2f"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/fredericka_the_great"
+                android:textStyle="bold"
+                android:textColor="#762e2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/project_art" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredericka_the_great"
+                android:text="Community 🌴"
+                android:layout_marginTop="5dp"
+                android:textColor="#762e2f"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/fredericka_the_great"
+                android:textStyle="bold"
+                android:textColor="#762e2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/project_community" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fredericka_the_great"
+                android:layout_marginTop="5dp"
+                android:text="Coffee ☕"
+                android:textColor="#762e2f"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/fredericka_the_great"
+                android:textStyle="bold"
+                android:textColor="#762e2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/project_cafe" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
